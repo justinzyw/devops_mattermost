@@ -1,4 +1,4 @@
-FROM mattermost/mattermost-prod-web:4.3.1
+FROM mattermost/mattermost-prod-app:4.3.1
 
 ENV DB_HOST devops-mattermostdb
 
