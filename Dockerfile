@@ -24,6 +24,7 @@ RUN mkdir -p /mattermost/data \
 
 # Configure entrypoint and command
 COPY entrypoint.sh /
+RUN chmod 777 /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
 WORKDIR /mattermost/bin
 CMD ["platform"]
